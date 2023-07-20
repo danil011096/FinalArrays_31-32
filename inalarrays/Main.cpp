@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <cstdlib>
 #include <ctime>
 
@@ -7,9 +7,9 @@ int main () {
 	setlocale(LC_ALL, "Russian");
 		int n, m;
 
-		//Задача 1. Сортировка первых N элементов
+		//Р—Р°РґР°С‡Р° 1. РЎРѕСЂС‚РёСЂРѕРІРєР° РїРµСЂРІС‹С… N СЌР»РµРјРµРЅС‚РѕРІ
 
-		/*std::cout << "Задача 1.\nИзначальный массив:\n\n";
+		/*std::cout << "Р—Р°РґР°С‡Р° 1.\nРР·РЅР°С‡Р°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ:\n\n";
 		const int size1 = 10;
 		int arr1[size1]{};
 		
@@ -21,30 +21,30 @@ int main () {
 		}
 		std::cout << std::endl;
 
-		std::cout << "\nВведите кол-во элементов для сортировки -> ";
+		std::cout << "\nР’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРєРё -> ";
 		std::cin >> n;
 		while (n < 2 || n > size1)
 		{
-			std::cout << "Ошибка ввода, повторите ввод!";
+			std::cout << "РћС€РёР±РєР° РІРІРѕРґР°, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ!";
 			std::cin >> n;
 		}
 
-		//Пузырьковая сортировка
+		//РџСѓР·С‹СЂСЊРєРѕРІР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
 		for (int i = n - 1; i >0; i--)
 			for (int j = 0; j < i; j++)
 				if (arr1[j] > arr1[j + 1])
 					std::swap (arr1[j], arr1[j + 1]);
 
-		std::cout << "\nИтоговый массив:\n\n";
+		std::cout << "\nРС‚РѕРіРѕРІС‹Р№ РјР°СЃСЃРёРІ:\n\n";
 		for (int i = 0; i < size1; i++)
 		{
 			std::cout << arr1[i] << ' ';
 		}
 		std::cout << "\n\n";*/
 
-		//Задача 2. Температура в январе
+		//Р—Р°РґР°С‡Р° 2. РўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ
 
-		/*std::cout << "Задача 2.\nТемпература в январе:\n\n";
+		/*std::cout << "Р—Р°РґР°С‡Р° 2.\nРўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ:\n\n";
 
 		const int january_days = 31;
 		int january_temperature[january_days]{};
@@ -54,31 +54,31 @@ int main () {
 			january_temperature[day_number] = rand() % (-5 + 1 - (- 30)) + (- 30);
 			std::cout << january_temperature[day_number] << ", ";
 		}
-		std::cout << "\b\b.\n\nВведите число -> ";
+		std::cout << "\b\b.\n\nР’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ -> ";
 		std::cin >> n;
 
-		int sum = 0; //сумма температуры января
-		int counter = 0; //для подсчета температур < n;
+		int sum = 0; //СЃСѓРјРјР° С‚РµРјРїРµСЂР°С‚СѓСЂС‹ СЏРЅРІР°СЂСЏ
+		int counter = 0; //РґР»СЏ РїРѕРґСЃС‡РµС‚Р° С‚РµРјРїРµСЂР°С‚СѓСЂ < n;
 		for (int day_number = 0; day_number < january_days; day_number++)
 		{
 			sum += january_temperature[day_number];
 			if (january_temperature[day_number] < n)
 			counter++;
 		}
-		std::cout << "Средняя температура в январе: " << sum / double (january_days) << ".\n";
-		std::cout << "Дней в январе с температурой менее " << n << ": " << counter << ".\n\n";*/
+		std::cout << "РЎСЂРµРґРЅСЏСЏ С‚РµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ: " << sum / double (january_days) << ".\n";
+		std::cout << "Р”РЅРµР№ РІ СЏРЅРІР°СЂРµ СЃ С‚РµРјРїРµСЂР°С‚СѓСЂРѕР№ РјРµРЅРµРµ " << n << ": " << counter << ".\n\n";*/
 
-		//Задача 3. Вхождение в диапазон
+		//Р—Р°РґР°С‡Р° 3. Р’С…РѕР¶РґРµРЅРёРµ РІ РґРёР°РїР°Р·РѕРЅ
 
-		std::cout << "\nЗадача 3.\nВведите начало диапазона -> ";
+		std::cout << "\nР—Р°РґР°С‡Р° 3.\nР’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»Рѕ РґРёР°РїР°Р·РѕРЅР° -> ";
 		std::cin >> n;
-		std::cout << "Введите конец диапазона -> ";
+		std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРЅРµС† РґРёР°РїР°Р·РѕРЅР° -> ";
 		std::cin >> m;
 
 		const int size3 = 20;
 		int arr3[size3]{};
 
-		std::cout << "Итог:\n";
+		std::cout << "РС‚РѕРі:\n";
 		srand(time(NULL));
 		for (int i = 0; i < size3; i++)
 		{
@@ -88,6 +88,7 @@ int main () {
 			//else std::cout << i + 1 << ". " << arr3[i] << "\n";
 			std::cout << i + 1 << ". " << arr3[i] << (arr3[i] >= n && arr3[i] <= m ? "!" : "") << "\n";
 		}
+
 
 		return 0;
 }
